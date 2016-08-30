@@ -11,5 +11,4 @@ needle_index = values['haystack'].index(values['needle'])
 
 data.update({'needle': needle_index})
 validate_url = url + '/validate'
-
 r_validate = requests.post(validate_url, data)
