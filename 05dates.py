@@ -11,7 +11,7 @@ values = r.json()
 dt = parse(values['datestamp'])
 dt = dt + timedelta(seconds=values['interval'])
 
-# the hacky replace makes me sad for timezone format, too, 
+# the hacky replace for timezone format makes me sad, too, 
 # but haven't gotten around to making a clean solution
 dt_str = dt.isoformat().replace('+00:00', 'Z')
 

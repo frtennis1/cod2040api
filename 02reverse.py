@@ -10,3 +10,5 @@ data.update({'string': r.text[::-1]})
 validate_url = url + '/validate'
 
 r_validate = requests.post(validate_url, data)
+
+print r_validate.text

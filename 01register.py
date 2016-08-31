@@ -7,3 +7,4 @@ data = {'token': api_tools.token, 'github': repo_url}
 
 r = requests.post(url, data)
 
+print r.text
